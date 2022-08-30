@@ -1,0 +1,377 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 29 15:22:52 IDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>657 seconds (657824 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkDeleteProduct()'><b>checkDeleteProduct</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkDeleteProduct(ShoppingCartTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace712102960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace712102960'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkDeleteProduct(ShoppingCartTest.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>27</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithValidData()'><b>registerWithValidData</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, continue shopping</td>
+<td></td>
+<td>11</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPhoneNumberInvalid()'><b>registerWithPhoneNumberInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length must be more than 6 and less than 15 digits</td>
+<td></td>
+<td>10</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPhoneNumberInvalid()'><b>registerWithPhoneNumberInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a valid contact number.</td>
+<td></td>
+<td>11</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkFirstResult()'><b>checkFirstResult</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: boots</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkFirstResult()'><b>checkFirstResult</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: socks</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPasswordInvalid()'><b>registerWithPasswordInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, please enter at least 6 characters.</td>
+<td></td>
+<td>10</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkCountResults()'><b>checkCountResults</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: dress</td>
+<td></td>
+<td>13</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkSearchTerm()'><b>checkSearchTerm</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: socks</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithFirthNameInvalid()'><b>registerWithFirthNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a valid first name</td>
+<td></td>
+<td>13</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithLastNameInvalid()'><b>registerWithLastNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a valid last name</td>
+<td></td>
+<td>13</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkPrice()'><b>checkPrice</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: boots</td>
+<td></td>
+<td>10</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkCountResults()'><b>checkCountResults</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: socks</td>
+<td></td>
+<td>7</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkAddTowProducts()'><b>checkAddTowProducts</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td></td>
+<td>33</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkPrice()'><b>checkPrice</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: tray</td>
+<td></td>
+<td>8</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithEmailInvalid()'><b>registerWithEmailInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value should be a valid email.</td>
+<td></td>
+<td>15</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithFirthNameInvalid()'><b>registerWithFirthNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please supply a valid first name</td>
+<td></td>
+<td>13</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPasswordInvalid()'><b>registerWithPasswordInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password needs to contain both numbers and letters and be 6-12 characters long.</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithEmailInvalid()'><b>registerWithEmailInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be a valid email.</td>
+<td></td>
+<td>13</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkSearchTerm()'><b>checkSearchTerm</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: boots</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithValidData()'><b>registerWithValidData</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopping</td>
+<td></td>
+<td>9</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPhoneNumberInvalid()'><b>registerWithPhoneNumberInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a valid contact number.</td>
+<td></td>
+<td>10</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkPrice()'><b>checkPrice</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: socks</td>
+<td></td>
+<td>9</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkPrice()'><b>checkPrice</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: dress</td>
+<td></td>
+<td>11</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkSearchTerm()'><b>checkSearchTerm</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: tray</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPhoneNumberInvalid()'><b>registerWithPhoneNumberInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please enter a valid contact number.</td>
+<td></td>
+<td>10</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithEmailInvalid()'><b>registerWithEmailInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value should be a valid email.</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.LoginTest.loginWithIncorrectPassword()'><b>loginWithIncorrectPassword</b><br>Test class: testSuits.authTestSuit.LoginTest<br>Parameters: tanicknom@gmail.com, lk9i7y</td>
+<td></td>
+<td>9</td>
+<td>testSuits.authTestSuit.LoginTest@61ce23ac</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.LoginTest.loginWithCorrectData()'><b>loginWithCorrectData</b><br>Test class: testSuits.authTestSuit.LoginTest<br>Parameters: tanicknom@gmail.com, Y348d76Rt</td>
+<td></td>
+<td>21</td>
+<td>testSuits.authTestSuit.LoginTest@61ce23ac</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithLastNameInvalid()'><b>registerWithLastNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please supply a valid last name</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPasswordInvalid()'><b>registerWithPasswordInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password needs to contain both numbers and letters and be 6-12 characters long.</td>
+<td></td>
+<td>11</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithValidData()'><b>registerWithValidData</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, continue shopping</td>
+<td></td>
+<td>10</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkCountResults()'><b>checkCountResults</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: boots</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkFirstResult()'><b>checkFirstResult</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: tray</td>
+<td></td>
+<td>4</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithValidData()'><b>registerWithValidData</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shopping</td>
+<td></td>
+<td>9</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithLastNameInvalid()'><b>registerWithLastNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a valid last name</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithFirthNameInvalid()'><b>registerWithFirthNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, please supply a valid first name</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkAddProduct()'><b>checkAddProduct</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td></td>
+<td>32</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithEmailInvalid()'><b>registerWithEmailInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should be a valid email.</td>
+<td></td>
+<td>27</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkFirstResult()'><b>checkFirstResult</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: dress</td>
+<td></td>
+<td>6</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithLastNameInvalid()'><b>registerWithLastNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, please supply a valid last name</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkChangeCount()'><b>checkChangeCount</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td></td>
+<td>23</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithFirthNameInvalid()'><b>registerWithFirthNameInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a valid first name</td>
+<td></td>
+<td>12</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.authTestSuit.RegistrationTest.registerWithPasswordInvalid()'><b>registerWithPasswordInvalid</b><br>Test class: testSuits.authTestSuit.RegistrationTest<br>Parameters: Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your password needs to contain both numbers and letters and be 6-12 characters long.</td>
+<td></td>
+<td>11</td>
+<td>testSuits.authTestSuit.RegistrationTest@7c1e2a2d</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkCountResults()'><b>checkCountResults</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: tray</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.searchTestSuit.SearchTest.checkSearchTerm()'><b>checkSearchTerm</b><br>Test class: testSuits.searchTestSuit.SearchTest<br>Parameters: dress</td>
+<td></td>
+<td>5</td>
+<td>testSuits.searchTestSuit.SearchTest@52d645b1</td></tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkTotalSum()'><b>checkTotalSum</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td></td>
+<td>26</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+<tr>
+<td title='testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkEnterAndExit()'><b>checkEnterAndExit</b><br>Test class: testSuits.ShoppingCartTestSuit.ShoppingCartTest</td>
+<td></td>
+<td>30</td>
+<td>testSuits.ShoppingCartTestSuit.ShoppingCartTest@2cc3ad05</td></tr>
+</table><p>
+</body>
+</html>

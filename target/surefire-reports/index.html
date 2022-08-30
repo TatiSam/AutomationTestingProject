@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">48 methods, 1 failed,   47 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkDeleteProduct">checkDeleteProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkAddProduct">checkAddProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkAddTowProducts">checkAddTowProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkChangeCount">checkChangeCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkCountResults(dress)">checkCountResults(dress)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkCountResults(socks)">checkCountResults(socks)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkCountResults(boots)">checkCountResults(boots)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkCountResults(tray)">checkCountResults(tray)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkEnterAndExit">checkEnterAndExit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkFirstResult(boots)">checkFirstResult(boots)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkFirstResult(socks)">checkFirstResult(socks)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkFirstResult(tray)">checkFirstResult(tray)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkFirstResult(dress)">checkFirstResult(dress)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkPrice(boots)">checkPrice(boots)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkPrice(tray)">checkPrice(tray)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkPrice(socks)">checkPrice(socks)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkPrice(dress)">checkPrice(dress)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkSearchTerm(socks)">checkSearchTerm(socks)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkSearchTerm(boots)">checkSearchTerm(boots)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkSearchTerm(tray)">checkSearchTerm(tray)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.searchTestSuit.SearchTest" class="method navigator-link" hash-for-method="checkSearchTerm(dress)">checkSearchTerm(dress)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.ShoppingCartTestSuit.ShoppingCartTest" class="method navigator-link" hash-for-method="checkTotalSum">checkTotalSum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.LoginTest" class="method navigator-link" hash-for-method="loginWithCorrectData(tanicknom@gmail.com, Y348d76Rt)">loginWithCorrectData(tanicknom@gmail.com, Y348d76Rt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.LoginTest" class="method navigator-link" hash-for-method="loginWithIncorrectPassword(tanicknom@gmail.com, lk9i7y)">loginWithIncorrectPassword(tanicknom@gmail.com, lk9i7y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithEmailInvalid(Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value shoul...)">registerWithEmailInvalid(Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value shoul...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithEmailInvalid(Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be ...)">registerWithEmailInvalid(Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithEmailInvalid(Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value ...)">registerWithEmailInvalid(Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithEmailInvalid(Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should ...)">registerWithEmailInvalid(Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithFirthNameInvalid(Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a ...)">registerWithFirthNameInvalid(Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithFirthNameInvalid(Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please ...)">registerWithFirthNameInvalid(Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithFirthNameInvalid(Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)">registerWithFirthNameInvalid(Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithFirthNameInvalid(Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)">registerWithFirthNameInvalid(Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithLastNameInvalid(Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)">registerWithLastNameInvalid(Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithLastNameInvalid(Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please s...)">registerWithLastNameInvalid(Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please s...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithLastNameInvalid(Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a...)">registerWithLastNameInvalid(Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithLastNameInvalid(Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)">registerWithLastNameInvalid(Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPasswordInvalid(Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, plea...)">registerWithPasswordInvalid(Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, plea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPasswordInvalid(Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password...)">registerWithPasswordInvalid(Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPasswordInvalid(Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password ...)">registerWithPasswordInvalid(Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPasswordInvalid(Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your pa...)">registerWithPasswordInvalid(Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your pa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPhoneNumberInvalid(Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length ...)">registerWithPhoneNumberInvalid(Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPhoneNumberInvalid(Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a ...)">registerWithPhoneNumberInvalid(Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPhoneNumberInvalid(Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a...)">registerWithPhoneNumberInvalid(Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithPhoneNumberInvalid(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please...)">registerWithPhoneNumberInvalid(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithValidData(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, contin...)">registerWithValidData(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, contin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithValidData(Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopp...)">registerWithValidData(Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopp...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithValidData(Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, con...)">registerWithValidData(Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, con...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="testSuits.authTestSuit.RegistrationTest" class="method navigator-link" hash-for-method="registerWithValidData(Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shoppi...)">registerWithValidData(Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shoppi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testSuits.ShoppingCartTestSuit.ShoppingCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDeleteProduct">
+                  </a> <!-- checkDeleteProduct -->
+                  <span class="method-name">checkDeleteProduct</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testSuits.ShoppingCartTestSuit.ShoppingCartTest.checkDeleteProduct(ShoppingCartTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSuits.searchTestSuit.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCountResults(dress)">
+                  </a> <!-- checkCountResults(dress) -->
+                  <span class="method-name">checkCountResults</span>
+                  <span class="parameters">(dress)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCountResults(socks)">
+                  </a> <!-- checkCountResults(socks) -->
+                  <span class="method-name">checkCountResults</span>
+                  <span class="parameters">(socks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCountResults(boots)">
+                  </a> <!-- checkCountResults(boots) -->
+                  <span class="method-name">checkCountResults</span>
+                  <span class="parameters">(boots)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCountResults(tray)">
+                  </a> <!-- checkCountResults(tray) -->
+                  <span class="method-name">checkCountResults</span>
+                  <span class="parameters">(tray)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFirstResult(boots)">
+                  </a> <!-- checkFirstResult(boots) -->
+                  <span class="method-name">checkFirstResult</span>
+                  <span class="parameters">(boots)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFirstResult(socks)">
+                  </a> <!-- checkFirstResult(socks) -->
+                  <span class="method-name">checkFirstResult</span>
+                  <span class="parameters">(socks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFirstResult(tray)">
+                  </a> <!-- checkFirstResult(tray) -->
+                  <span class="method-name">checkFirstResult</span>
+                  <span class="parameters">(tray)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFirstResult(dress)">
+                  </a> <!-- checkFirstResult(dress) -->
+                  <span class="method-name">checkFirstResult</span>
+                  <span class="parameters">(dress)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPrice(boots)">
+                  </a> <!-- checkPrice(boots) -->
+                  <span class="method-name">checkPrice</span>
+                  <span class="parameters">(boots)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPrice(tray)">
+                  </a> <!-- checkPrice(tray) -->
+                  <span class="method-name">checkPrice</span>
+                  <span class="parameters">(tray)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPrice(socks)">
+                  </a> <!-- checkPrice(socks) -->
+                  <span class="method-name">checkPrice</span>
+                  <span class="parameters">(socks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPrice(dress)">
+                  </a> <!-- checkPrice(dress) -->
+                  <span class="method-name">checkPrice</span>
+                  <span class="parameters">(dress)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSearchTerm(socks)">
+                  </a> <!-- checkSearchTerm(socks) -->
+                  <span class="method-name">checkSearchTerm</span>
+                  <span class="parameters">(socks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSearchTerm(boots)">
+                  </a> <!-- checkSearchTerm(boots) -->
+                  <span class="method-name">checkSearchTerm</span>
+                  <span class="parameters">(boots)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSearchTerm(tray)">
+                  </a> <!-- checkSearchTerm(tray) -->
+                  <span class="method-name">checkSearchTerm</span>
+                  <span class="parameters">(tray)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSearchTerm(dress)">
+                  </a> <!-- checkSearchTerm(dress) -->
+                  <span class="method-name">checkSearchTerm</span>
+                  <span class="parameters">(dress)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSuits.authTestSuit.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmailInvalid(Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value shoul...)">
+                  </a> <!-- registerWithEmailInvalid(Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value shoul...) -->
+                  <span class="method-name">registerWithEmailInvalid</span>
+                  <span class="parameters">(Miss,Lea,Jobs,leajobs,p123456,543216,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,this value should be a valid email.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmailInvalid(Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be ...)">
+                  </a> <!-- registerWithEmailInvalid(Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be ...) -->
+                  <span class="method-name">registerWithEmailInvalid</span>
+                  <span class="parameters">(Mrs,Kate,Smit,kate.com,098y76,123456,10.0,str 5,Lod,HAMERKAZ,123456,this value should be a valid email.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmailInvalid(Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value ...)">
+                  </a> <!-- registerWithEmailInvalid(Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value ...) -->
+                  <span class="method-name">registerWithEmailInvalid</span>
+                  <span class="parameters">(Ms,Nik,Sam,@.com,gh34km,12345678,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,this value should be a valid email.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmailInvalid(Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should ...)">
+                  </a> <!-- registerWithEmailInvalid(Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should ...) -->
+                  <span class="method-name">registerWithEmailInvalid</span>
+                  <span class="parameters">(Mr,John,Doe,john@gmail,p123456,123459,5.0,str,Beer Sheva,HADAROM,12345,this value should be a valid email.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithFirthNameInvalid(Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a ...)">
+                  </a> <!-- registerWithFirthNameInvalid(Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a ...) -->
+                  <span class="method-name">registerWithFirthNameInvalid</span>
+                  <span class="parameters">(Mr,d1,Doe,john@gmail.com,p123456,123459,5.0,str,Beer Sheva,HADAROM,12345,please supply a valid first name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithFirthNameInvalid(Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please ...)">
+                  </a> <!-- registerWithFirthNameInvalid(Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please ...) -->
+                  <span class="method-name">registerWithFirthNameInvalid</span>
+                  <span class="parameters">(Miss,f@,Jobs,leajobs@gmail.com,p123456,543216,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,please supply a valid first name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithFirthNameInvalid(Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)">
+                  </a> <!-- registerWithFirthNameInvalid(Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...) -->
+                  <span class="method-name">registerWithFirthNameInvalid</span>
+                  <span class="parameters">(Ms,N,Sam,nik@gmail.com,gh34km,12345678,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,please supply a valid first name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithFirthNameInvalid(Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)">
+                  </a> <!-- registerWithFirthNameInvalid(Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...) -->
+                  <span class="method-name">registerWithFirthNameInvalid</span>
+                  <span class="parameters">(Mrs,11,Smit,kate@gmail.com,098y76,123456,10.0,str 5,Lod,HAMERKAZ,123456,please supply a valid first name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithLastNameInvalid(Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)">
+                  </a> <!-- registerWithLastNameInvalid(Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...) -->
+                  <span class="method-name">registerWithLastNameInvalid</span>
+                  <span class="parameters">(Mrs,Kate,11,kate@gmail.com,098y76,123456,10.0,str 5,Lod,HAMERKAZ,123456,please supply a valid last name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithLastNameInvalid(Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please s...)">
+                  </a> <!-- registerWithLastNameInvalid(Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please s...) -->
+                  <span class="method-name">registerWithLastNameInvalid</span>
+                  <span class="parameters">(Miss,Lea,f@,leajobs@gmail.com,p123456,543216,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,please supply a valid last name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithLastNameInvalid(Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a...)">
+                  </a> <!-- registerWithLastNameInvalid(Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a...) -->
+                  <span class="method-name">registerWithLastNameInvalid</span>
+                  <span class="parameters">(Mr,John,d1,john@gmail.com,p123456,123459,5.0,str,Beer Sheva,HADAROM,12345,please supply a valid last name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithLastNameInvalid(Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)">
+                  </a> <!-- registerWithLastNameInvalid(Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...) -->
+                  <span class="method-name">registerWithLastNameInvalid</span>
+                  <span class="parameters">(Ms,Nik,N,nik@gmail.com,gh34km,12345678,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,please supply a valid last name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPasswordInvalid(Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, plea...)">
+                  </a> <!-- registerWithPasswordInvalid(Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, plea...) -->
+                  <span class="method-name">registerWithPasswordInvalid</span>
+                  <span class="parameters">(Ms,Nik,Sam,nik@gmail.com,1111a,12345678,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,please enter at least 6 characters.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPasswordInvalid(Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password...)">
+                  </a> <!-- registerWithPasswordInvalid(Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password...) -->
+                  <span class="method-name">registerWithPasswordInvalid</span>
+                  <span class="parameters">(Mr,John,Doe,john@gmail.com,123456.0,123459,5.0,str,Beer Sheva,HADAROM,12345,your password needs to contain both numbers and letters and be 6-12 characters long.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPasswordInvalid(Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password ...)">
+                  </a> <!-- registerWithPasswordInvalid(Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password ...) -->
+                  <span class="method-name">registerWithPasswordInvalid</span>
+                  <span class="parameters">(Mrs,Kate,Smit,kate@gmail.com,abcdefg,123456,10.0,str 5,Lod,HAMERKAZ,123456,your password needs to contain both numbers and letters and be 6-12 characters long.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPasswordInvalid(Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your pa...)">
+                  </a> <!-- registerWithPasswordInvalid(Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your pa...) -->
+                  <span class="method-name">registerWithPasswordInvalid</span>
+                  <span class="parameters">(Miss,Lea,Jobs,leajobs@gmail.com,12345#,543216,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,your password needs to contain both numbers and letters and be 6-12 characters long.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPhoneNumberInvalid(Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length ...)">
+                  </a> <!-- registerWithPhoneNumberInvalid(Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length ...) -->
+                  <span class="method-name">registerWithPhoneNumberInvalid</span>
+                  <span class="parameters">(Ms,Nik,Sam,nik@gmail.com,gh34km,1234,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,length must be more than 6 and less than 15 digits)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPhoneNumberInvalid(Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a ...)">
+                  </a> <!-- registerWithPhoneNumberInvalid(Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a ...) -->
+                  <span class="method-name">registerWithPhoneNumberInvalid</span>
+                  <span class="parameters">(Mrs,Kate,Smit,kate@gmail.com,098y76,aaaaaa,10.0,str 5,Lod,HAMERKAZ,123456,please enter a valid contact number.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPhoneNumberInvalid(Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a...)">
+                  </a> <!-- registerWithPhoneNumberInvalid(Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a...) -->
+                  <span class="method-name">registerWithPhoneNumberInvalid</span>
+                  <span class="parameters">(Mr,John,Doe,john@gmail.com,p123456,12345d,5.0,str,Beer Sheva,HADAROM,12345,please enter a valid contact number.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithPhoneNumberInvalid(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please...)">
+                  </a> <!-- registerWithPhoneNumberInvalid(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please...) -->
+                  <span class="method-name">registerWithPhoneNumberInvalid</span>
+                  <span class="parameters">(Miss,Lea,Jobs,leajobs@gmail.com,p123456,12345!,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,please enter a valid contact number.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithValidData(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, contin...)">
+                  </a> <!-- registerWithValidData(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, contin...) -->
+                  <span class="method-name">registerWithValidData</span>
+                  <span class="parameters">(Miss,Lea,Jobs,leajobs@gmail.com,p123456,543216,58.0,str 10,Tel-Aviv,TEL-AVIV,54321,continue shopping)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithValidData(Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopp...)">
+                  </a> <!-- registerWithValidData(Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopp...) -->
+                  <span class="method-name">registerWithValidData</span>
+                  <span class="parameters">(Mr,John,Doe,john@gmail.com,p123456,123459,5.0,str,Beer Sheva,HADAROM,12345,continue shopping)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithValidData(Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, con...)">
+                  </a> <!-- registerWithValidData(Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, con...) -->
+                  <span class="method-name">registerWithValidData</span>
+                  <span class="parameters">(Ms,Nik,Sam,nik@gmail.com,gh34km,12345678,1005.0,str str,Jerusalem,YERUSHALAYIM,123456,continue shopping)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithValidData(Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shoppi...)">
+                  </a> <!-- registerWithValidData(Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shoppi...) -->
+                  <span class="method-name">registerWithValidData</span>
+                  <span class="parameters">(Mrs,Kate,Smit,kate@gmail.com,098y76,123456,10.0,str 5,Lod,HAMERKAZ,123456,continue shopping)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSuits.authTestSuit.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithCorrectData(tanicknom@gmail.com, Y348d76Rt)">
+                  </a> <!-- loginWithCorrectData(tanicknom@gmail.com, Y348d76Rt) -->
+                  <span class="method-name">loginWithCorrectData</span>
+                  <span class="parameters">(tanicknom@gmail.com,Y348d76Rt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithIncorrectPassword(tanicknom@gmail.com, lk9i7y)">
+                  </a> <!-- loginWithIncorrectPassword(tanicknom@gmail.com, lk9i7y) -->
+                  <span class="method-name">loginWithIncorrectPassword</span>
+                  <span class="parameters">(tanicknom@gmail.com,lk9i7y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSuits.ShoppingCartTestSuit.ShoppingCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddProduct">
+                  </a> <!-- checkAddProduct -->
+                  <span class="method-name">checkAddProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddTowProducts">
+                  </a> <!-- checkAddTowProducts -->
+                  <span class="method-name">checkAddTowProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkChangeCount">
+                  </a> <!-- checkChangeCount -->
+                  <span class="method-name">checkChangeCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEnterAndExit">
+                  </a> <!-- checkEnterAndExit -->
+                  <span class="method-name">checkEnterAndExit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTotalSum">
+                  </a> <!-- checkTotalSum -->
+                  <span class="method-name">checkTotalSum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testSuits.authTestSuit.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testSuits.authTestSuit.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;testSuits.BaseTest&quot;/&gt;
+      &lt;class name=&quot;testSuits.searchTestSuit.SearchTest&quot;/&gt;
+      &lt;class name=&quot;testSuits.ShoppingCartTestSuit.ShoppingCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkAddProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkAddTowProducts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkChangeCount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkCountResults</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkDeleteProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkEnterAndExit</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkFirstResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkSearchTerm</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTotalSum</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithCorrectData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithIncorrectPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithEmailInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithFirthNameInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithLastNameInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithPasswordInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithPhoneNumberInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithValidData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithCorrectData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithValidData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithCorrectData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithIncorrectPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithEmailInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithFirthNameInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithLastNameInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithPasswordInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithPhoneNumberInvalid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerWithValidData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(48);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkAddTowProducts')
+data.setCell(0, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(0, 3, 33784);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkAddProduct')
+data.setCell(1, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(1, 3, 32779);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkEnterAndExit')
+data.setCell(2, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(2, 3, 30712);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerWithEmailInvalid')
+data.setCell(3, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(3, 3, 27869);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkDeleteProduct')
+data.setCell(4, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(4, 3, 27141);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkTotalSum')
+data.setCell(5, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(5, 3, 26263);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkChangeCount')
+data.setCell(6, 2, 'testSuits.ShoppingCartTestSuit.ShoppingCartTest')
+data.setCell(6, 3, 23213);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithCorrectData')
+data.setCell(7, 2, 'testSuits.authTestSuit.LoginTest')
+data.setCell(7, 3, 21007);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'registerWithEmailInvalid')
+data.setCell(8, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(8, 3, 15539);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkCountResults')
+data.setCell(9, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(9, 3, 13857);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'registerWithLastNameInvalid')
+data.setCell(10, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(10, 3, 13817);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'registerWithFirthNameInvalid')
+data.setCell(11, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(11, 3, 13624);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'registerWithEmailInvalid')
+data.setCell(12, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(12, 3, 13402);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'registerWithFirthNameInvalid')
+data.setCell(13, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(13, 3, 13306);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'registerWithFirthNameInvalid')
+data.setCell(14, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(14, 3, 12596);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'registerWithLastNameInvalid')
+data.setCell(15, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(15, 3, 12449);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'registerWithFirthNameInvalid')
+data.setCell(16, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(16, 3, 12323);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'registerWithEmailInvalid')
+data.setCell(17, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(17, 3, 12244);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'registerWithPasswordInvalid')
+data.setCell(18, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(18, 3, 12218);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'registerWithLastNameInvalid')
+data.setCell(19, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(19, 3, 12044);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'registerWithLastNameInvalid')
+data.setCell(20, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(20, 3, 12035);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'registerWithPasswordInvalid')
+data.setCell(21, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(21, 3, 11756);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'registerWithPasswordInvalid')
+data.setCell(22, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(22, 3, 11670);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'registerWithValidData')
+data.setCell(23, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(23, 3, 11616);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'registerWithPhoneNumberInvalid')
+data.setCell(24, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(24, 3, 11166);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'checkPrice')
+data.setCell(25, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(25, 3, 11137);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'registerWithPasswordInvalid')
+data.setCell(26, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(26, 3, 10871);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'registerWithPhoneNumberInvalid')
+data.setCell(27, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(27, 3, 10586);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'registerWithPhoneNumberInvalid')
+data.setCell(28, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(28, 3, 10342);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'registerWithPhoneNumberInvalid')
+data.setCell(29, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(29, 3, 10244);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'checkPrice')
+data.setCell(30, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(30, 3, 10224);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'registerWithValidData')
+data.setCell(31, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(31, 3, 10008);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'registerWithValidData')
+data.setCell(32, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(32, 3, 9789);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'checkPrice')
+data.setCell(33, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(33, 3, 9661);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'loginWithIncorrectPassword')
+data.setCell(34, 2, 'testSuits.authTestSuit.LoginTest')
+data.setCell(34, 3, 9614);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'registerWithValidData')
+data.setCell(35, 2, 'testSuits.authTestSuit.RegistrationTest')
+data.setCell(35, 3, 9432);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkPrice')
+data.setCell(36, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(36, 3, 8380);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkCountResults')
+data.setCell(37, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(37, 3, 7028);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'checkFirstResult')
+data.setCell(38, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(38, 3, 6135);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkFirstResult')
+data.setCell(39, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(39, 3, 5941);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'checkCountResults')
+data.setCell(40, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(40, 3, 5941);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'checkFirstResult')
+data.setCell(41, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(41, 3, 5841);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'checkSearchTerm')
+data.setCell(42, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(42, 3, 5698);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'checkSearchTerm')
+data.setCell(43, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(43, 3, 5658);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'checkSearchTerm')
+data.setCell(44, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(44, 3, 5384);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'checkCountResults')
+data.setCell(45, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(45, 3, 5278);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'checkSearchTerm')
+data.setCell(46, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(46, 3, 5141);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'checkFirstResult')
+data.setCell(47, 2, 'testSuits.searchTestSuit.SearchTest')
+data.setCell(47, 3, 4764);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.authTestSuit.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseTestSetUp(CHROME)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5151 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">5229 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.authTestSuit.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">5229 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.searchTestSuit.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">7853 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.ShoppingCartTestSuit.ShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">11115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.authTestSuit.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithCorrectData(tanicknom@gmail.com, Y348d76Rt)</span>
+                <span class="method-start">17251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithIncorrectPassword(tanicknom@gmail.com, lk9i7y)</span>
+                <span class="method-start">38508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48130 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.authTestSuit.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseTestSetUp(CHROME)</span>
+                <span class="method-start">50868 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53783 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">registerWithEmailInvalid(Mr, John, Doe, john@gmail, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, this value should ...)</span>
+                <span class="method-start">56867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithEmailInvalid(Mrs, Kate, Smit, kate.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, this value should be ...)</span>
+                <span class="method-start">84744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithEmailInvalid(Miss, Lea, Jobs, leajobs, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, this value shoul...)</span>
+                <span class="method-start">98150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithEmailInvalid(Ms, Nik, Sam, @.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, this value ...)</span>
+                <span class="method-start">113698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithFirthNameInvalid(Mr, d1, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a ...)</span>
+                <span class="method-start">126119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithFirthNameInvalid(Mrs, 11, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)</span>
+                <span class="method-start">139746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithFirthNameInvalid(Miss, f@, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please ...)</span>
+                <span class="method-start">152344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithFirthNameInvalid(Ms, N, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)</span>
+                <span class="method-start">165650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithLastNameInvalid(Mr, John, d1, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, please supply a...)</span>
+                <span class="method-start">178207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithLastNameInvalid(Mrs, Kate, 11, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, please supply a v...)</span>
+                <span class="method-start">190251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithLastNameInvalid(Miss, Lea, f@, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please s...)</span>
+                <span class="method-start">204072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithLastNameInvalid(Ms, Nik, N, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, pleas...)</span>
+                <span class="method-start">216525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPasswordInvalid(Mr, John, Doe, john@gmail.com, 123456.0, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, your password...)</span>
+                <span class="method-start">228893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPasswordInvalid(Mrs, Kate, Smit, kate@gmail.com, abcdefg, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, your password ...)</span>
+                <span class="method-start">241115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPasswordInvalid(Miss, Lea, Jobs, leajobs@gmail.com, 12345#, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, your pa...)</span>
+                <span class="method-start">252881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPasswordInvalid(Ms, Nik, Sam, nik@gmail.com, 1111a, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, plea...)</span>
+                <span class="method-start">264555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPhoneNumberInvalid(Mr, John, Doe, john@gmail.com, p123456, 12345d, 5.0, str, Beer Sheva, HADAROM, 12345, please enter a...)</span>
+                <span class="method-start">275570 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPhoneNumberInvalid(Mrs, Kate, Smit, kate@gmail.com, 098y76, aaaaaa, 10.0, str 5, Lod, HAMERKAZ, 123456, please enter a ...)</span>
+                <span class="method-start">286160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPhoneNumberInvalid(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 12345!, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, please...)</span>
+                <span class="method-start">297331 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithPhoneNumberInvalid(Ms, Nik, Sam, nik@gmail.com, gh34km, 1234, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, length ...)</span>
+                <span class="method-start">307578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithValidData(Mr, John, Doe, john@gmail.com, p123456, 123459, 5.0, str, Beer Sheva, HADAROM, 12345, continue shopp...)</span>
+                <span class="method-start">318085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithValidData(Mrs, Kate, Smit, kate@gmail.com, 098y76, 123456, 10.0, str 5, Lod, HAMERKAZ, 123456, continue shoppi...)</span>
+                <span class="method-start">327879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithValidData(Miss, Lea, Jobs, leajobs@gmail.com, p123456, 543216, 58.0, str 10, Tel-Aviv, TEL-AVIV, 54321, contin...)</span>
+                <span class="method-start">337314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithValidData(Ms, Nik, Sam, nik@gmail.com, gh34km, 12345678, 1005.0, str str, Jerusalem, YERUSHALAYIM, 123456, con...)</span>
+                <span class="method-start">348934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">358946 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.searchTestSuit.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseTestSetUp(CHROME)</span>
+                <span class="method-start">360191 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">362771 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkCountResults(dress)</span>
+                <span class="method-start">362823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCountResults(boots)</span>
+                <span class="method-start">376683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCountResults(tray)</span>
+                <span class="method-start">382721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCountResults(socks)</span>
+                <span class="method-start">388002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkFirstResult(dress)</span>
+                <span class="method-start">395078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkFirstResult(boots)</span>
+                <span class="method-start">401216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkFirstResult(tray)</span>
+                <span class="method-start">407060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkFirstResult(socks)</span>
+                <span class="method-start">411827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPrice(dress)</span>
+                <span class="method-start">417850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPrice(boots)</span>
+                <span class="method-start">428990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPrice(tray)</span>
+                <span class="method-start">439216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPrice(socks)</span>
+                <span class="method-start">447598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSearchTerm(dress)</span>
+                <span class="method-start">457292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSearchTerm(boots)</span>
+                <span class="method-start">462995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSearchTerm(tray)</span>
+                <span class="method-start">468661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSearchTerm(socks)</span>
+                <span class="method-start">473805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">479198 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSuits.ShoppingCartTestSuit.ShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">baseTestSetUp(CHROME)</span>
+                <span class="method-start">480062 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">482490 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkAddProduct</span>
+                <span class="method-start">482491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAddTowProducts</span>
+                <span class="method-start">515285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkChangeCount</span>
+                <span class="method-start">549069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkDeleteProduct</span>
+                <span class="method-start">572282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkEnterAndExit</span>
+                <span class="method-start">599439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTotalSum</span>
+                <span class="method-start">630167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">656430 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

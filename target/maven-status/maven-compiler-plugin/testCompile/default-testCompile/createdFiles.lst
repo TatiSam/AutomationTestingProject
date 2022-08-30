@@ -1,0 +1,17 @@
+pom\ShoppingCartPage.class
+testSuits\authTestSuit\RegistrationTest.class
+pom\RegistrationPage.class
+pom\BasePage.class
+pom\ListOfProductsPage.class
+testSuits\authTestSuit\LoginTest.class
+utils\ExelUtils.class
+pom\ProductPage.class
+pom\LoginPage.class
+testSuits\ShoppingCartTestSuit\ShoppingCartTest.class
+pom\HomePage.class
+testSuits\BaseTest.class
+utils\WebBrowserType.class
+testSuits\BaseTest$1.class
+testSuits\searchTestSuit\SearchTest.class
+utils\WebDriverUtils$1.class
+utils\WebDriverUtils.class

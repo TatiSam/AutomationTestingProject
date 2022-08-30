@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserType" value="CHROME"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/Den_PC/Desktop/ness/Selenium/Projects/nextProject">
+        <classes>
+            <class name="testSuits.ShoppingCartTestSuit.ShoppingCartTest">
+                <methods>
+                    <include name="checkAddProduct"/>
+                    <include name="checkAddTowProducts"/>
+                    <include name="checkChangeCount"/>
+                    <include name="checkTotalSum"/>
+                    <include name="checkDeleteProduct"/>
+                    <include name="checkEnterAndExit"/>
+                </methods>
+            </class>
+            <class name="testSuits.searchTestSuit.SearchTest">
+                <methods>
+                    <include name="checkSearchTerm"/>
+                    <include name="checkCountResults"/>
+                    <include name="checkFirstResult"/>
+                    <include name="checkPrice"/>
+                </methods>
+            </class>
+            <class name="testSuits.authTestSuit.LoginTest">
+                <methods>
+                    <include name="loginWithCorrectData"/>
+                    <include name="loginWithIncorrectPassword"/>
+                </methods>
+            </class>
+            <class name="testSuits.authTestSuit.RegistrationTest">
+                <methods>
+                    <include name="registerWithValidData"/>
+                    <include name="registerWithFirthNameInvalid"/>
+                    <include name="registerWithLastNameInvalid"/>
+                    <include name="registerWithEmailInvalid"/>
+                    <include name="registerWithPasswordInvalid"/>
+                    <include name="registerWithPhoneNumberInvalid"/>
+                </methods>
+            </class>
+            <class name="testSuits.processTestSuit.ProcessTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="searchTerm"/>
+                    <include name="checkShoppingCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
