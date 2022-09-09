@@ -16,6 +16,7 @@
         <allure-testng-version>2.18.1</allure-testng-version>
         <log4j-version>2.17.2</log4j-version>
         <poi-version>5.2.2</poi-version>
+        <monte-screen-version>0.7.7.0</monte-screen-version>
         <aspectj.version>1.9.9.1</aspectj.version>
         <extentreports-version>5.0.8</extentreports-version>
         <maven-surefire-plugin-version>3.0.0-M7</maven-surefire-plugin-version>
@@ -35,7 +36,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng-version}</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -59,6 +60,12 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${poi-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.stephenc.monte</groupId>
+            <artifactId>monte-screen-recorder</artifactId>
+            <version>${monte-screen-version}</version>
         </dependency>
 
         <dependency>

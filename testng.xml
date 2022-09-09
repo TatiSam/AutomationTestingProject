@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Den_PC/Desktop/ness/Selenium/Projects/nextProject">
+        <parameter name="browserType" value="CHROME"/>
+        <parameter name="URL" value="https://www.next.co.il/en"/>
+        <parameter name="Timeout" value="5"/>
+        <classes>
+            <class name="auth.LoginTest">
+                <methods>
+                    <include name="test01_login"/>
+                    <include name="test02_login"/>
+                </methods>
+            </class>
+            <class name="auth.RegistrationTest">
+                <methods>
+                    <include name="test01_registration"/>
+                    <include name="test02_registration"/>
+                    <include name="test03_registration"/>
+                    <include name="test04_registration"/>
+                    <include name="test05_registration"/>
+                    <include name="test06_registration"/>
+                </methods>
+            </class>
+            <class name="functional.UserJourneyTest">
+                <methods>
+                    <include name="test01_userJourney"/>
+                    <include name="test02_userJourney"/>
+                    <include name="test03_userJourney"/>
+                    <include name="test04_userJourney"/>
+                    <include name="test05_userJourney"/>
+                </methods>
+            </class>
+            <class name="search.SearchTest">
+                <methods>
+                    <include name="test01_search"/>
+                </methods>
+            </class>
+            <class name="shoppingCart.ShoppingCartTest">
+                <methods>
+                    <include name="test01_shoppingCart"/>
+                    <include name="test02_shoppingCart"/>
+                    <include name="test03_shoppingCart"/>
+                    <include name="test04_shoppingCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
