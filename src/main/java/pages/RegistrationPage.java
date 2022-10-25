@@ -7,8 +7,7 @@ import org.openqa.selenium.support.FindBy;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class RegistrationPage{
-
+public class RegistrationPage {
     @FindBy(id="Title")
     private WebElement title;
 

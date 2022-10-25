@@ -1,20 +1,22 @@
 package shoppingCart;
 
+import base.BaseTest;
 import extensions.UIActions;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.*;
-import utilities.CommonOps;
 import utilities.TestListener;
 import workFlows.ShoppingCartWorkFlows;
+
+import static utilities.Variables.*;
 
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
 @Listeners({TestListener.class})
-public class ShoppingCartTest extends CommonOps{
+public class ShoppingCartTest extends BaseTest {
 
     @BeforeMethod
     public void setUpTest(){

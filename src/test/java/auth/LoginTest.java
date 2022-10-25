@@ -1,13 +1,14 @@
 package auth;
 
+import base.BaseTest;
 import extensions.UIActions;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.*;
-import utilities.CommonOps;
 import utilities.ManageDDT;
 import utilities.TestListener;
+import utilities.Variables;
 import workFlows.LoginWorkFlows;
 
 /**
@@ -15,11 +16,11 @@ import workFlows.LoginWorkFlows;
  * @project QA-Automation next.co.il
  */
 @Listeners({TestListener.class})
-public class LoginTest extends CommonOps{
+public class LoginTest extends BaseTest {
 
     @BeforeMethod
     public void setUpTest(){
-        UIActions.visit(url);
+        UIActions.visit(Variables.url);
     }
 
     @Severity(SeverityLevel.CRITICAL)

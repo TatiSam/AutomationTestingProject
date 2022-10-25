@@ -3,14 +3,14 @@ package workFlows;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
-import utilities.CommonOps;
+
+import static utilities.Variables.*;
 
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class SearchWorkFlows extends CommonOps {
-
+public class SearchWorkFlows {
     @Step("Search term: {0}")
     public static void searchTerm(String term){
         UIActions.sendKeysToElement(homePage.getSearchBox(), term);

@@ -23,8 +23,7 @@ import static org.monte.media.VideoFormatKeys.*;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class MonteScreenRecorder extends ScreenRecorder{
-
+public class MonteScreenRecorder extends ScreenRecorder {
     private static ScreenRecorder screenRecorder;
     private final String name;
 

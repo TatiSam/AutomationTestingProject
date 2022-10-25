@@ -1,7 +1,6 @@
 package extensions;
 
 import org.openqa.selenium.WebElement;
-import utilities.CommonOps;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -10,8 +9,7 @@ import static org.testng.Assert.assertTrue;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class Verifications extends CommonOps {
-
+public class Verifications {
     public static void verifyTextEquals(String actual, String expected) {
         assertEquals(actual, expected);
     }

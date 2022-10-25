@@ -10,32 +10,31 @@ import pages.*;
  * @project QA-Automation next.co.il
  */
 public class Variables {
+    public static WebDriver driver;
+    public static WebDriverWait wait;
+    public static Actions actions;
+    public static String url;
+    public static String timeout;
+    public static WebBrowserType browserType;
 
-    protected static WebDriver driver;
-    protected static WebDriverWait wait;
-    protected static Actions actions;
-    protected static String url;
-    protected static String timeout;
-    protected static WebBrowserType browserType;
+    public static HomePage homePage;
+    public static ListOfProductsPage listOfProductsPage;
+    public static ProductPage productPage;
+    public static ShoppingCartPage shoppingCartPage;
+    public static LoginPage loginPage;
+    public static RegistrationPage registrationPage;
 
-    protected static HomePage homePage;
-    protected static ListOfProductsPage listOfProductsPage;
-    protected static ProductPage productPage;
-    protected static ShoppingCartPage shoppingCartPage;
-    protected static LoginPage loginPage;
-    protected static RegistrationPage registrationPage;
+    public static String registrationDataFilePath;
+    public static String searchDataFilePath;
 
-    protected static String registrationDataFilePath;
-    protected static String searchDataFilePath;
+    public static String screenShoppingCartFilePath;
+    public static String screenSearchFilePath;
+    public static String screenRegistrationFilePath;
+    public static String screenLoginFilePath;
 
-    protected static String screenShoppingCartFilePath;
-    protected static String screenSearchFilePath;
-    protected static String screenRegistrationFilePath;
-    protected static String screenLoginFilePath;
+    public static String shoppingCartMsg1item;
+    public static String shoppingCartMsg2items;
+    public static String shoppingCartEmptyMsg;
 
-    protected static String shoppingCartMsg1item;
-    protected static String shoppingCartMsg2items;
-    protected static String shoppingCartEmptyMsg;
-
-    protected static String searchTerm;
+    public static String searchTerm;
 }

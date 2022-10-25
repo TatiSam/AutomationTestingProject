@@ -3,14 +3,14 @@ package workFlows;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
-import utilities.CommonOps;
+
+import static utilities.Variables.*;
 
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class ShoppingCartWorkFlows extends CommonOps {
-
+public class ShoppingCartWorkFlows {
     @Step("Find product and add to shopping cart")
     public static void findProductAndAddToShoppingCart(){
         UIActions.hoverOverElement(homePage.getNavBarGirlsLink());

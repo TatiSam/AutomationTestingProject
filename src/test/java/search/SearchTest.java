@@ -1,10 +1,10 @@
 package search;
 
+import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.*;
-import utilities.CommonOps;
 import utilities.ManageDDT;
 import utilities.TestListener;
 import workFlows.SearchWorkFlows;
@@ -14,7 +14,7 @@ import workFlows.SearchWorkFlows;
  * @project QA-Automation next.co.il
  */
 @Listeners({TestListener.class})
-public class SearchTest extends CommonOps{
+public class SearchTest extends BaseTest {
 
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify search process")

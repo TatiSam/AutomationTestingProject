@@ -3,14 +3,14 @@ package workFlows;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
-import utilities.CommonOps;
+
+import static utilities.Variables.*;
 
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class LoginWorkFlows extends CommonOps {
-
+public class LoginWorkFlows {
     @Step("Login with email: {0} and password: {1}")
     public static void login(String email, String password){
         UIActions.clickElement(homePage.getMyAccountButton());

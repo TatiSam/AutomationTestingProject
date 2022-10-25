@@ -9,8 +9,7 @@ import java.io.File;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class TestListener implements ITestListener{
-
+public class TestListener implements ITestListener {
     public void onTestStart(ITestResult test) {
         try {
             MonteScreenRecorder.startRecord(test.getName());

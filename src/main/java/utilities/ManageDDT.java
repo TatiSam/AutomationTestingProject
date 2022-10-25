@@ -17,8 +17,7 @@ import java.util.List;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class ManageDDT{
-
+public class ManageDDT {
     @DataProvider(name = "validDataRegistration")
     public Object[][] getValidDataRegistration(){
         return getDataFromXML(Variables.registrationDataFilePath, 0);

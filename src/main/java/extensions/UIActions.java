@@ -9,18 +9,18 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import utilities.CommonOps;
 
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import static utilities.Variables.*;
+
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class UIActions extends CommonOps {
-
+public class UIActions {
     @Step("Click web element")
     public static void clickElement(WebElement element) {
         element.click();

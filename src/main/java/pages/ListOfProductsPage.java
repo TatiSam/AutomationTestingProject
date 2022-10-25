@@ -7,8 +7,7 @@ import org.openqa.selenium.support.FindBy;
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
-public class ListOfProductsPage{
-
+public class ListOfProductsPage {
     @FindBy(css = "[data-testid=\"plp-product-grid-item\"]:first-child h2 a")
     private WebElement firstResult;
 

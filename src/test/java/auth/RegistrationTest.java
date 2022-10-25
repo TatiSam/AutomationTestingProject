@@ -1,21 +1,23 @@
 package auth;
 
+import base.BaseTest;
 import extensions.UIActions;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.*;
-import utilities.CommonOps;
 import utilities.ManageDDT;
 import utilities.TestListener;
 import workFlows.RegistrationWorkFlows;
+
+import static utilities.Variables.*;
 
 /**
  * @author Tatiana Samoilenko, Sep 2022
  * @project QA-Automation next.co.il
  */
 @Listeners({TestListener.class})
-public class RegistrationTest extends CommonOps {
+public class RegistrationTest extends BaseTest {
 
     @BeforeMethod
     public void setUpTest(){

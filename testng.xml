@@ -22,7 +22,7 @@
                     <include name="test06_registration"/>
                 </methods>
             </class>
-            <class name="functional.UserJourneyTest">
+            <class name="functional.E2E">
                 <methods>
                     <include name="test01_userJourney"/>
                     <include name="test02_userJourney"/>
