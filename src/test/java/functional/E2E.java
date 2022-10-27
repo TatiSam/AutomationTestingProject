@@ -68,11 +68,6 @@ public class E2E extends BaseTest {
     )
     public void test04_E2E(){
         ShoppingCartWorkFlows.removeProduct();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         ShoppingCartWorkFlows.verifyMessageContains(shoppingCartMsg1item);
     }
 
@@ -84,11 +79,6 @@ public class E2E extends BaseTest {
     public void test05_E2E(){
         double total = ShoppingCartWorkFlows.getPrice()*2;
         ShoppingCartWorkFlows.changeQuantityOfProducts();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         ShoppingCartWorkFlows.verifyQuantityOfProduct(2);
         ShoppingCartWorkFlows.verifyTotalSum(total);
     }
