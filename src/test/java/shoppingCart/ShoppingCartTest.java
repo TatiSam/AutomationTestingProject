@@ -59,11 +59,6 @@ public class ShoppingCartTest extends BaseTest {
         ShoppingCartWorkFlows.findProductAndAddToShoppingCart();
         double total = ShoppingCartWorkFlows.getPrice()*2;
         ShoppingCartWorkFlows.changeQuantityOfProducts();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         ShoppingCartWorkFlows.verifyTotalSum(total);
         ShoppingCartWorkFlows.removeProduct();
     }
@@ -74,11 +69,6 @@ public class ShoppingCartTest extends BaseTest {
     public void test05_shoppingCart(){
         ShoppingCartWorkFlows.findProductAndAddToShoppingCart();
         ShoppingCartWorkFlows.removeProduct();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         ShoppingCartWorkFlows.verifyMessageEqual(shoppingCartEmptyMsg);
     }
 }
